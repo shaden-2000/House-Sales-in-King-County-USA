@@ -1,7 +1,7 @@
 # House-Sales-in-King-County-USA
 
 
-#libraries:
+# libraries:
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,26 +12,26 @@ from sklearn.linear_model import LinearRegression
 %matplotlib inline
 
 
-#Importing Data Sets
+# Importing Data Sets
 file_name='https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/coursera/project/kc_house_data_NaN.csv'
 df=pd.read_csv(file_name)
 
-#We use the method head to display the first 5 columns of the dataframe.
+# We use the method head to display the first 5 columns of the dataframe.
 df.head()
 df
 
-'''Display the data types of each column using the attribute dtype, then take a screenshot and submit it, include your code in the image.'''
+''' Display the data types of each column using the attribute dtype, then take a screenshot and submit it, include your code in the image.'''
 df.dtypes
 
-#We use the method describe to obtain a statistical summary of the dataframe.
+# We use the method describe to obtain a statistical summary of the dataframe.
 df.describe()
 
 
-'''Drop the columns "id" and "Unnamed: 0" from axis 1 using the method drop(), then use the method describe() to obtain a statistical summary of the data. Take a screenshot and submit it, make sure the inplace parameter is set to True'''
+''' Drop the columns "id" and "Unnamed: 0" from axis 1 using the method drop(), then use the method describe() to obtain a statistical summary of the data. Take a screenshot and submit it, make sure the inplace parameter is set to True'''
 df.drop('id',"Unnamed: 0", axis = 1, inplace = True)
 df.describe()
 
-'''We can see we have missing values for the columns  bedrooms and  bathrooms 
+''' We can see we have missing values for the columns  bedrooms and  bathrooms 
 '''
 
 print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().sum())
