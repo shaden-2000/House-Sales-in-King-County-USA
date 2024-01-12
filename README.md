@@ -1,5 +1,9 @@
 # House-Sales-in-King-County-USA
 
+In this project, you have to perform analytics operations on an insurance database that uses the below mentioned parameters.
+<img width="546" alt="Screenshot 1445-06-30 at 10 03 51 PM" src="https://github.com/shaden-2000/House-Sales-in-King-County-USA/assets/100734021/4ad83ffc-d187-4805-bdb0-85771e64c343">
+
+
 
 # Objectives:
 - Load the data as a pandas dataframe
